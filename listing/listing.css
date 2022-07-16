@@ -1,0 +1,94 @@
+body{
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header CSS */
+header{
+    height: 80px;
+    background-color:#3b2632;
+    /* border: 5px solid red; */
+}
+#brand{
+    font-size:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    margin-left:1%;
+    margin-top:1%;
+    float:left;
+
+}
+
+#social{
+    float: right;
+    margin-right:1%;
+    margin-top:1%;
+}
+
+.sociallogo{
+    height: 50px;
+    
+}
+/*  main content*/
+
+#main{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: inline-block;
+    /* border: 2px solid red; */
+    
+}
+#filter{
+    width: 20%;
+    height: 600px;
+    border: 2px solid blue;
+    float: left;
+}
+
+#list{
+    width: 75%;
+    /* border: 2px solid rgb(60, 255, 0); */
+    float: left;
+    margin-left: 4%;
+    margin-top: -2%;
+}
+
+.tile{
+    height: 300px;
+    width:100%;
+    border: 2px solid red;
+    margin-top: 2%;
+}
+
+
+
+
+
+/* footer CSS */
+footer{
+    height: 80px;
+    background-color: #3b2632;
+    color: white;
+    /* border: 5px solid rgb(45, 22, 222); */
+}
+
+.footDiv{
+    float:left;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 32%;
+    border-right: 2px solid white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.noborder{
+    border:none;
+}
