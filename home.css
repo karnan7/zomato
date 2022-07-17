@@ -50,8 +50,28 @@ header{
     margin-top: 3%;
     position: absolute;
     font-size:90px;
-    
+    animation: revolve 10s infinite;
+}
 
+@keyframes revolve{
+
+    0% {
+        transform:rotate(90deg);
+        margin-left:2%;   
+    }
+    25% {
+        transform:rotate(180deg);
+        margin-left:20%
+    }
+    50%{
+        transform:rotate(270deg);
+        margin-left: 40%;
+    }
+    75%{
+        transform:rotate(360deg);
+        margin-left: 60%;
+
+    }
 }
 
 #logo span{
@@ -93,11 +113,11 @@ select{
 
 /* quicksearch CSS */
 #quicksearch{
-    height: 600px;
     width: 80%;
     margin-left:10%;
     margin-top:2%;
     margin-bottom:2%;
+    display:inline-block;
     /* border: 5px solid burlywood; */
 }
 
@@ -110,6 +130,10 @@ select{
     margin-left: 2%;
 
 
+}
+
+#quickheading:hover{
+    font-size: 35px;
 }
 
 #quicksubheading{
@@ -128,6 +152,10 @@ select{
     /* border: 2px solid red; */
     float: left;
     box-shadow: 10px 20px 10px #885e76;
+}
+
+.tilecontainer:hover{
+    transform: scale(1.1);
 }
 
 .tilecomp1{
@@ -194,4 +222,67 @@ ul{
 
 .noborder{
     border:none;
+}
+@media screen and (max-width:1306px){
+    #heading {
+        
+        margin-left: 28%;
+        margin-top: 14%;
+    }
+}
+
+@media screen and (max-width:1138px){
+    .tilecontainer{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:815px){
+    .tilecontainer{
+        width:100%
+    }
+}
+
+@media screen and (max-width:1090px){
+    #heading {
+        margin-left: 25%;
+        margin-top: 16%;
+    }
+
+    #dropdown{
+        margin-top:24%;
+    }
+}
+
+@media screen and (max-width:536px){
+    #heading {
+        width: 100%;
+        font-size: 58px;
+        margin-left: 4%;
+        margin-top: 27%;
+    }
+    #dropdown{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 53%;
+    }
+    select{
+        width:100%
+    }
+
+    #restaurant{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:500px){
+    #heading {
+        width: 100%;
+        font-size: 56px;
+        margin-left: 2%;
+        margin-top: 31%;
+    }
+    #dropdown{
+        margin-top:57%;
+    }
 }
